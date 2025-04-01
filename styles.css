@@ -37,7 +37,7 @@ body {
   .header-box {
     background: linear-gradient(to right, #4da6ff, #0099cc);
     color: white;
-    padding: 1em 0;
+    padding: 1em;
     text-align: center;
     border-top: 2px solid white;
     position: sticky;
@@ -46,18 +46,25 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  .main-title {
-    font-weight: 700;
-    font-size: 1.3em;
-    margin-bottom: 0.3em;
-    text-decoration: underline;
+  .header-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
   }
   
-  .sub-menu {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    font-size: 0.95em;
+  .header-row span {
+    font-weight: 600;
+    font-size: 1em;
+    white-space: nowrap;
+    cursor: default;
+    text-decoration: none;
+  }
+  
+  .header-row span.title {
+    text-decoration: underline;
+    font-weight: 700;
   }
   
   .sub-menu span {
