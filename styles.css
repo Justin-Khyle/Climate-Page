@@ -1,22 +1,27 @@
+/* Base Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #222;
   }
   
-  /* --- Navigation Styling --- */
+  /* Top Navigation */
   .top-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5em 1em;
-    background-color: #4da6ff;
+    padding: 0.7em 1.2em;
+    background-color: #0077cc;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .icons {
     display: flex;
-    gap: 10px;
+    gap: 14px;
   }
   
   .icons span {
@@ -25,54 +30,70 @@ body {
   }
   
   .about {
-    font-weight: bold;
-    cursor: default;
+    font-weight: 600;
   }
   
-  /* Sticky header box */
+  /* Sticky Header */
   .header-box {
-    background-color: #4da6ff;
-    color: black;
-    padding: 0.5em 0;
+    background: linear-gradient(to right, #4da6ff, #0099cc);
+    color: white;
+    padding: 1em 0;
     text-align: center;
     border-top: 2px solid white;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   .main-title {
-    font-weight: bold;
-    text-decoration: underline;
+    font-weight: 700;
+    font-size: 1.3em;
     margin-bottom: 0.3em;
+    text-decoration: underline;
   }
   
   .sub-menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2em;
+    font-size: 0.95em;
   }
   
   .sub-menu span {
-    font-weight: bold;
-    font-size: 0.95em;
+    font-weight: 600;
     cursor: default;
   }
   
+  /* Container */
   .container {
-    padding: 1em;
-    max-width: 900px;
+    padding: 2em 1em;
+    max-width: 800px;
     margin: auto;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    margin-top: 1.5em;
+  }
+  
+  /* Content Sections */
+  .section {
+    margin-top: 1.5em;
   }
   
   .section h3 {
     text-align: left;
+    font-size: 1.1em;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 0.3em;
   }
   
   img {
     width: 100%;
     height: auto;
     display: block;
-    margin: 1em 0;
+    border-radius: 10px;
+    margin: 1.5em 0;
   }
   
   ul {
@@ -84,11 +105,25 @@ body {
     padding-top: 1em;
     border-top: 1px solid #ccc;
     text-align: center;
+    font-size: 0.9em;
+    color: #666;
   }
   
+  /* Responsive Design */
   @media (max-width: 600px) {
     .container {
-      padding: 0.8em;
+      padding: 1em;
+      margin-top: 1em;
+    }
+  
+    .sub-menu {
+      flex-direction: column;
+      gap: 0.5em;
+    }
+  
+    .top-nav {
+      flex-direction: column;
+      gap: 0.5em;
     }
   }
   
