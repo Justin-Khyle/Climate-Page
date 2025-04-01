@@ -20,21 +20,19 @@ body {
     white-space: nowrap;
   }
   
-  
-  .icons {
-    display: flex;
-    gap: 14px;
+  .search-bar {
+    padding: 0.4em 0.8em;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 0.95em;
+    width: 60%;
+    max-width: 300px;
   }
-  
-  .icons span {
-    font-size: 1.2em;
-    cursor: pointer;
-    margin-right: 10px; /* Add spacing */
-  }
-  
   
   .about {
     font-weight: 600;
+    margin-left: 1em;
   }
   
   /* Sticky Header */
@@ -69,11 +67,6 @@ body {
   .header-row span.title {
     text-decoration: underline;
     font-weight: 700;
-  }
-  
-  .sub-menu span {
-    font-weight: 600;
-    cursor: default;
   }
   
   /* Container */
@@ -111,13 +104,24 @@ body {
     padding-left: 1.2em;
   }
   
-  footer {
-    margin-top: 2em;
-    padding-top: 1em;
-    border-top: 1px solid #ccc;
+  /* Footer with Social Icons */
+  .footer-bar {
+    background-color: #0077cc;
+    padding: 1em 0;
     text-align: center;
-    font-size: 0.9em;
-    color: #666;
+    margin-top: 2em;
+  }
+  
+  .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.3em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ffdd57;
   }
   
   /* Responsive Design */
@@ -127,10 +131,18 @@ body {
       margin-top: 1em;
     }
   
-    .sub-menu {
+    .header-row {
       flex-direction: column;
       gap: 0.5em;
     }
   
+    .top-nav {
+      flex-direction: column;
+      gap: 0.5em;
+    }
+  
+    .search-bar {
+      width: 90%;
+    }
   }
   
