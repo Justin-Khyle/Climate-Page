@@ -2,16 +2,18 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Los Angeles Wildfire Effects</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Angeles Wildfires - What We Know</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
     }
 
-    /* Top bar with icons and About */
+    /* --- Navigation Styling --- */
     .top-nav {
       display: flex;
       align-items: center;
@@ -30,12 +32,11 @@
       cursor: pointer;
     }
 
-    .top-nav .about {
+    .about {
       font-weight: bold;
       cursor: default;
     }
 
-    /* Combined header + submenu box */
     .header-box {
       background-color: #4da6ff;
       color: black;
@@ -44,7 +45,7 @@
       border-top: 2px solid white;
     }
 
-    .header-box .main-title {
+    .main-title {
       font-weight: bold;
       text-decoration: underline;
       margin-bottom: 0.3em;
@@ -61,23 +62,46 @@
       cursor: default;
     }
 
-    /* Responsive image */
+    /* --- Content Styling --- */
+    .container {
+      padding: 1em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h3 {
+      text-align: left;
+    }
+
     img {
       width: 100%;
       height: auto;
       display: block;
+      margin: 1em 0;
     }
 
-    .container {
-      padding: 1em;
+    ul {
+      padding-left: 1.2em;
+    }
+
+    footer {
+      margin-top: 2em;
+      padding-top: 1em;
+      border-top: 1px solid #ccc;
       text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Top Navigation -->
+  <!-- Navigation -->
   <div class="top-nav">
     <div class="icons">
       <span>▶️</span>
@@ -87,7 +111,7 @@
     <div class="about">About</div>
   </div>
 
-  <!-- Combined Header Box -->
+  <!-- Header Box -->
   <div class="header-box">
     <div class="main-title">Affects in Your Area</div>
     <div class="sub-menu">
@@ -96,17 +120,41 @@
     </div>
   </div>
 
-  <!-- Content -->
+  <!-- Main Content -->
   <div class="container">
-    <h1>Los Angeles Wildfire Effects</h1>
-    <img src="https://sustainablela.ucla.edu/sites/default/files/styles/sf_landscape_16x9/public/media/images/Untitled-3-Front%20Page%20Palisades%20Fire.jpeg?h=d1cb525d&itok=owHhHW0w"
-      alt="Wildfire" />
-    <p><strong>Acres Spread</strong></p>
-    <p><strong>Scroll</strong></p>
+    <img
+      src="https://sustainablela.ucla.edu/sites/default/files/styles/sf_landscape_16x9/public/media/images/Untitled-3-Front%20Page%20Palisades%20Fire.jpeg?h=d1cb525d&itok=owHhHW0w"
+      alt="Building on fire">
+
+    <p>Los Angeles has been home to some of the most extravagant minds since the city's construction. Recently, on January 7, 2025, LA experienced a record-breaking wildfire in Pacific Palisades, east of Malibu. The fire grew to 23,448 acres before it could be contained.</p>
+
+    <p>Projected wildfire conditions from February through May 2025 show regional variability. In Northern California, expected precipitation and snowpack will likely suppress fire spread. Meanwhile, Southern California has seen a drier-than-average wet season, leading to heightened fire risk, especially in the South Coast region.</p>
+
+    <div class="section">
+      <h3>What We Know</h3>
+      <ul>
+        <li>Fire is dangerous</li>
+        <li>Fire is spreading far</li>
+        <li>Fire is hot</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Travel in Pairs</h3>
+      <ul>
+        <li>Get out of hot places</li>
+        <li>Be safe!</li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>Where to find us</p>
+    </footer>
   </div>
 
 </body>
 
 </html>
+
 
 
