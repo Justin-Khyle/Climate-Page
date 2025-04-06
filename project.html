@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Angeles Wildfires What We Know</title>
+</head>
+<style>
+    /* Base Styles */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #f8f9fa;
+        color: #222;
+    }
+
+    /* Sea Blue Box Starts Here  */
+    .container {
+        background-color: rgb(32, 100, 145);
+        border: 0;
+
+    }
+
+    .owners {
+        text-align: center;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        transform: translateY(-160px);
+        font-size: 2rem;
+        text-shadow:
+            1px 1px 0px black,
+            /* Stroke effect on the top-right */
+            -2px -1px 0px black,
+            /* Stroke effect on the bottom-left */
+            1px -1px 0px black,
+            /* Stroke effect on the top-left */
+            -1px 1px 0px black;
+        /* Stroke effect on the bottom-right */
+    }
+
+    /*Title Introduction starts here*/
+    .center-title {
+        text-align: center;
+        margin-right: auto;
+        font-size: 10rem;
+        color: white;
+        font-family: bold sans-serif;
+        transform: translateY(300px);
+    }
+
+    .heading1 {
+        margin-left: 600px;
+        transform: translateY(110px);
+        color: white;
+        font-family: Helvetica;
+        font-size: 3rem;
+
+    }
+
+    .heading2 {
+        margin-left: 1600px;
+        color: white;
+        font-family: Helvetica;
+        font-size: 3rem;
+    }
+
+    .heading3 {
+        text-align: center;
+        color: white;
+        font-family: Helvetica;
+        font-size: 4rem;
+    }
+
+    /*Search Bar*/
+    .top-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.7em 1.2em;
+        background-color: #0077cc;
+        color: rgb(0, 0, 0);
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+
+
+    .search-bar {
+        padding: 0.4em 0.8em;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        font-size: 0.95em;
+        width: 60%;
+        max-width: 300px;
+    }
+
+    .about {
+        font-weight: 600;
+        margin-left: 1em;
+    }
+
+    /*Alignment for Bullet Listed Items Starts Here*/
+    .warnings {
+        margin-left: 1450px;
+        transform: translateY(230px);
+    }
+
+    .location {
+        margin-left: 1450px;
+        transform: translateY(-900px);
+    }
+
+    .locationTitle {
+        font-size: 4rem;
+    }
+
+    .warningTitle {
+        font-size: 3rem;
+    }
+
+    /*Danger Header*/
+    .dangerHeader {
+        margin-left: 600px;
+        transform: translatey(500px);
+    }
+
+    /*Image alignment begins here*/
+    .wildfireimage {
+        margin-left: 300px;
+        margin-top: 30px;
+        transform: translateY(500px);
+        box-shadow: -80px 50px 15px rgba(0, 0, 0, 0.3);
+        outline: 5px solid black;
+    }
+
+
+    /*Paragraph Alignment Starts here*/
+    p {
+        text-indent: 50px;
+    }
+
+    /*Sticky Navbar*/
+    .navbar {
+        position: sticky;
+        top: 0;
+        background: linear-gradient(to right, #4da6ff, #0099cc);
+        padding: 1em 1.6em;
+        border-top: 2px solid white;
+        color: white;
+        text-align: center;
+        z-index: 1000;
+        /* keeps it on top */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .content {
+        padding: 1000px 20px;
+        /* Just to create scroll */
+    }
+
+    /* Footer with Socials */
+
+    footer {
+        background-color: #1471bd
+    }
+
+    .footerContainer {
+        width: 100%;
+        padding: 70px 30px 20px;
+    }
+
+    .socialicons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .socialicons a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+    }
+
+    .socialicons a i {
+        font-size: 2rem;
+        color: #000000
+
+    }
+
+    /* Hover Effect for Social Icons */
+    .socialicons a:hover {
+        background-color: #000000;
+        transition: 0.5s;
+        /* Error here, can get rid of as opacity is not working */
+    }
+
+    .socialicons a:hover i {
+        color: white;
+        transition: 0.5s;
+    }
+
+    .footerNav {
+        margin: 30px 0;
+    }
+
+    .footerNav ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .footerNav ul li a {
+        color: white;
+        margin: 20px;
+        text-decoration: none;
+        font-size: 1.3rem;
+        opacity: 0.7;
+        transition: 0.5s;
+    }
+
+    .footerNav ul li a:hover {
+        opacity: 1;
+    }
+
+    .footerBottom {
+        background-color: rgb(24, 15, 143);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footerBottom p {
+        color: white;
+    }
+
+    .designer {
+        opacity: 0.7;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: 0px 5px;
+
+        @media(max-width: 700px) {
+            .footerNav ul {
+                flex-direction: column;
+            }
+
+            .footerNav ul li {
+                width: 100%;
+                text-align: center;
+                margin: 10px;
+
+            }
+        }
+    }
+    p {
+  font-weight: 700; /*bold */
+}
+
+</style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Sticky NavBar -->
+    <div class="navbar">
+        <h2> <a href="#">What We Know.</a>
+            <a href="#">What You Can Do To Prepare.</a>
+            <a href="#">What's Next?</a>
+        </h2>
+    </div>
+
+
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <input type="text" class="search-bar" placeholder="Search...">
+        <h2>
+            <div class="about">About</div>
+        </h2>
+    </div>
+
+    <!-- Title and Heading -->
+    <div class="container">
+        <h1 class="center-title"> Los Angeles Climate Effect</h1>
+        <h4 class="owners"> By: Jayden Brown & Justin Khyle Pailano</h4>
+        <h2 class="heading1">What We Know.</h2>
+        <h2 class="heading2"> What's Next?</h2>
+        <h2 class="heading3">What Can You do to Prepare?</h2>
+    </div>
+
+    <!-- Danger Header -->
+    <div class="dangerHeader">
+        <h1 class="Danger!"> Danger in Los Angeles Tonight</h1>
+    </div>
+
+    <!-- Image -->
+    <img src="https://sustainablela.ucla.edu/sites/default/files/styles/sf_landscape_16x9/public/media/images/Untitled-3-Front%20Page%20Palisades%20Fire.jpeg?h=d1cb525d&itok=owHhHW0w"
+        alt="This is a picture of LA Streets on Fire" width="1000" height="600" class="wildfireimage"
+        margin-right="1000"> <!-- Try getting Img down to a smaller link Error when copying realtive path!? -->
+
+    <!--Bullet List of Warnings -->
+    <div class="warnings">
+        <h1 class="warningTitle"> What We Know.</h1>
+
+        <ul>
+            <h1>
+                <li>The LA wildfire first begun on January 7, 2025 near Pacific Palisades. </li> <!--World Vision -->
+                <li>More than 16,000 homes were burned and 36,000 acres to ashes.</li> <!--ABC NEWS -->
+                <li>The death toll raised to 30 victims sense</li> <!--NEW YORK TIMES-->
+                <li>See Additional Information on What You Should do Next Below.</li>
+            </h1>
+        </ul>
+    </div>
+
+    <div class="location">
+        <h1 class="locationTitle"> Known Locations of Fire Spread.</h1>
+        <ul>
+            <h1>
+                <li>PALISADES</li>
+                <li>EATON</li>
+            </h1>
+        </ul>
+    </div>
+    <!--Paragraph (facts) -->
+    <p> Los Angeles has been home to some of the most extravagant minds since the city's construction. Los Angeles,
+        otherwise known as LA, recently had their record-breaking fire spread on January 7, 2025. The fire erupted
+        during the morning in Pacific Palisades east of Malibu. Before long, the flames grew to
+        23,448 acres before the fire could be contained. The projected wildfire conditions across California from
+        February through May 2025 exhibit significant regional variability, with distinct climatic and fuel moisture
+        patterns influencing fire potential in the northern and southern portions of the state.
+        In Northern California, an active jet stream is forecast to deliver near to above-average precipitation
+        throughout February and March, followed by a transition toward warmer and drier conditions in April and May.
+        The resultant vegetation growth ("green-up") and persistent snowpack at mid-to-upper elevations are expected
+        to inhibit fire spread during this period.
+    </p>
+    <p>
+        Consequently, significant wildfire potential is anticipated to remain within normal thresholds, consistent
+        with historical trends of subdued large-fire activity during these months. Conversely, Southern California
+        has recorded a substantially drier-than-average wet season, with cumulative precipitation since October 1,
+        2024, falling below 25% of the norm across most regions.
+        This prolonged deficit has exacerbated drought conditions, with severe to extreme drought classifications
+        now widespread. As a result, the South Coast faces a slight to moderately elevated probability of
+        above-normal large-fire potential over the next four months. While limited grass and fine-fuel growth may
+        reduce the likelihood of fires driven by such fuels, the increased aridity has heightened the risk of fires
+        involving timber and heavier fuel loads.
+        In summary, while Northern California is expected to maintain typical wildfire potential due to favorable
+        moisture and fuel conditions, Southern California—particularly the South Coast—faces an increased likelihood
+        of significant fire activity, driven by persistent drought and desiccated fuels.
+    </p>
+
+
+
+    <!-- Bottom Footer with Socials -->
+    <footer class="footer-bar">
+        <div class="socialicons">
+            <a herf=""><i class="fa-brands fa-facebook"></i></a>
+            <a herf=""><i class="fa-brands fa-instagram"></i></a>
+            <a herf=""><i class="fa-brands fa-twitter"></i></a>
+
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Where to Find Us</a></li>
+            </ul>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy; 2025; Designed by <span class="designer">Jayden Brown and Justin Pailano</span></p>
+
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
